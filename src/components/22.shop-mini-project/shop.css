@@ -1,0 +1,185 @@
+body{
+
+ background-image: linear-gradient(84deg , #Fff , #cdf1ff) ;
+}
+
+header{
+}
+
+.navbar_logo_title{
+
+}
+.nav_list{
+
+}
+.nav_listItem{
+
+}
+.nav_listItemLink{
+ 
+}
+.nav_listItemLink:hover{
+ padding-bottom: .2rem;
+border-bottom: 2px solid rgba(238, 238, 238, 0.5);
+}
+.navbar_logo_title:hover{
+ 
+ border-bottom: 2px solid var(--l-red);
+}
+.nav_basketContainer{
+
+}
+.nav_basket__count {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ width: 24px;      /* عرض ثابت (به جای min-width) */
+ height: 24px;      /* ارتفاع ثابت */
+ padding: .7rem .8rem;
+ background-color: white;
+ color: #000000;
+ font-size: 12px;   /* اندازه فونت مناسب */
+ border-radius: 50%; /* شکل دایره */
+ line-height: 1;
+ overflow: hidden;  /* اگر محتوا بزرگ شد، مخفی شود */
+}
+.nav_basket{
+
+}
+
+.card-img-top{
+ border-top-left-radius: 8px;
+ border-top-right-radius: 8px;
+}
+
+.bgImage_section{
+ background-color: #202020e5;
+ }
+ 
+ .bgImage_container{
+  width: 60rem;
+  height: 50rem;
+ }
+
+
+/* Shop component styles */
+.products-container {
+ display: flex;
+ overflow-x: auto;
+ scroll-behavior: smooth;
+ -webkit-overflow-scrolling: touch;
+ cursor: grab;
+ padding: 1rem 0;
+ scroll-snap-type: x mandatory;
+ gap: 1.5rem;
+ user-select: none;
+ will-change: transform;
+}
+
+.products-container.dragging {
+ scroll-behavior: unset;
+ cursor: grabbing;
+}
+
+.products-container::-webkit-scrollbar {
+ display: none;
+}
+
+.product-card {
+ flex: 0 0 auto;
+ scroll-snap-align: start;
+ min-width: 280px;
+ width: 280px;
+ transition: transform 0.1s ease;
+}
+
+.products-container.dragging .product-card {
+ transition: none;
+}
+
+/* افکت هنگام کشیدن */
+.product-card:active {
+ transform: scale(0.98);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+ .product-card {
+   min-width: 240px;
+   width: 240px;
+ }
+}
+
+/* Existing styles remain the same */
+
+
+
+
+.priceTiTle , .count , .price , .priceTiTle {
+  font-size: .9rem;
+}
+.card-text{
+  font-size: 1.3rem;
+}
+
+.addModal{
+  transform: translateY(10rem);
+}
+.addModal_show{
+  transform: translateY(0);
+}
+
+.bag-sidebar{
+  width: 20rem;
+
+  right: -20rem;
+  transition: all 0.5s ease-in-out 0.05s;
+}
+.bag-sidebar_active{
+  right: 0;
+}
+
+.basketProducts{
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  min-width: 280px;
+  width: auto;
+  transition: transform 0.1s ease;
+}
+
+.basketProducts_finishBTN{
+  top: 43rem;
+  text-transform: capitalize;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* اضافه کردن این موارد به فایل CSS شما */
+
+.bag-sidebar {
+  width: 20rem;
+  right: -20rem;
+  transition: all 0.5s ease-in-out 0.05s;
+  direction: rtl; /* این خط را اضافه کنید */
+}
+
+.bag-sidebar_active {
+  right: 0;
+}
+
+.basketProducts {
+  direction: ltr; /* این خط را اضافه کنید تا محتوا به درستی نمایش داده شود */
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  min-width: 280px;
+  width: auto;
+  transition: transform 0.1s ease;
+}
+
+.bag-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+}
