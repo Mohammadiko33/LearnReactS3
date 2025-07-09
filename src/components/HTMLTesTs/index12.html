@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Coffe Shop</title>
+ <link rel="stylesheet" href="../12.coffeShop(MiniProject)/app.css">
+</head>
+<body>
+ <header>
+  <h1 class="header">our menu</h1>
+ </header>    
+
+ <ul class="menu">
+  <li class="menu_Item activate">all</li>
+  <li class="menu_Item">breakfast</li>
+  <li class="menu_Item">dessert</li>
+  <li class="menu_Item">dinner</li>
+  <li class="menu_Item">drinks</li>
+  <li class="menu_Item">lunch</li>
+ </ul>
+
+ <main>
+  <div class="food">
+   <div class="food_left">
+    <img src="../../../public/12/noImage.png" alt="this" class='food_left__image'/>
+   </div>
+   <div class="food_right">
+    <div class="food_header">
+     <h3 class="food_right__title">buttermilk</h3>
+     <h3 class="food_right__price">15.99</h3>
+    </div>
+    <div class="captionContainer">
+     <p class="caprion">lorem</p>
+    </div>
+   </div>
+  </div>
+ </main>
+ <script>
+
+  let arr = [
+  {id: 1, name: "lunch"},
+  {id: 2, name: "dinner"},
+  {id: 3, name: "lunch"},
+  {id: 4, name: "dinner"},
+  {id: 5, name: "dessert"},
+  {id: 6, name: "lunch"},
+  {id: 7, name: "drinks"},
+  {id: 8, name: "dessert"},
+  {id: 9, name: "lunch"},
+  {id: 10, name: "dinner"},
+  ]
+
+ let newArr = [...Array.from(new Set(arr.map(dr => dr.name)))]
+ newArr.map(ne => console.log(ne))
+ </script>
+</body>
+</html>

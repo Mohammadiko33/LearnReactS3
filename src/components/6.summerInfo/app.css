@@ -1,0 +1,63 @@
+body {
+  background: linear-gradient(45deg ,#d37ffa, #7449da);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.infos_Container {
+  width: 30rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+}
+.infoBox{
+ background-color: #fff;
+   padding: .5rem .7rem;
+ border-radius: 0.5rem;
+}
+.info_title{
+  
+}
+.infos{
+ width: 100%;
+}
+.info {
+
+}
+.showInfo{
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ padding: 0.4rem .8rem;
+    border: none;
+}
+.infoSummer{
+  margin: 0;
+  font-size: .8rem;
+}
+
+.infoSummer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+
+.infoSummer.show {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 2px solid #cecece8e;
+  max-height: 500px; 
+  transition: all 0.3s ease-in;
+}
+
+.infoSummer.hide {
+  max-height: 0;
+  transition: all 0.3s ease-out;
+}

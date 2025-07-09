@@ -1,0 +1,90 @@
+:root{
+ --coffeShop-brown: #af8a50;
+}
+
+*{
+ font-size: 1rem;
+}
+
+section{
+
+}
+header{
+ 
+}
+.header{
+ 
+}
+.header_line{
+ background-color: var(--coffeShop-brown);
+ width: 5rem;
+ height: 8px;
+ border-radius: 1rem;
+}
+header:hover .header_line{
+ width: 6rem;
+}
+.menu{
+
+}
+.menu_Item{
+ color: var(--coffeShop-brown);
+ padding: .5rem .75rem;
+ transition: all 0.3s ease-in-out .1s;
+ border-radius: .3rem;
+}
+.menu_Item:hover{
+ background-color: var(--coffeShop-brown);
+ color: #fff;
+}
+.activate{
+ background-color: var(--coffeShop-brown);
+ color: #fff;
+ text-shadow:0 0 12px rgba(255,255,255,0.6);
+}
+main{
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+.food{
+ width: 47.5%;
+}
+.food_left{
+ 
+}
+.food_left__image{
+ width: 16rem;
+ height: 10rem;
+ border-radius: .5rem;
+ border: 4px solid var(--coffeShop-brown);
+}
+.food_right{
+ 
+}
+.food_header{
+ border-bottom: 2px solid var(--coffeShop-brown);
+}
+.food_right__title{
+
+}
+.food_right__price{
+ color: var(--coffeShop-brown);
+}
+.captionContainer{
+ 
+}
+.caprion{
+margin-top: .5rem;
+color: #8b8b8b;
+}
+
+.bgImage_section{
+background-color: #202020e5;
+}
+
+.bgImage_container{
+ width: 80rem;
+ height: 50rem;
+}
